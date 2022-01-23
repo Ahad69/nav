@@ -1,0 +1,44 @@
+
+nav ul{
+    float: left;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+    position: relative;
+  }
+  nav ul li a{
+    
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+nav ul li a:hover{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  list-style: none;
+ background: rgba(59, 40, 40, 0.322);
+ border-radius: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    
+    border-top: none;
+  }
+ 
